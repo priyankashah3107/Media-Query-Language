@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html {
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 450px;
+    /* background-color: red; */
+
+}
+
+#main h1{
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+#main .text , .img {
+    width: 50%;
+    height: 400px;
+    /* background: yellow; */
+    float: left; /* use to align picture.*/
+    border: 1px solid #ddd;
+}
+
+.text p{
+ font-size: 28px;
+ padding: 30px;
+ text-align: justify;
+}
+
+.img img{
+    width: 700px;
+     height:400px;
+     padding: 30px;
+}
+
+@media (max-width: 786px) {
+     #main h1{
+        color: blue;
+     }
+     .text p{
+        font-size: 18px;
+     }
+
+     .img img{
+        width: 100%;
+        height: auto;
+     }
+}
+
+@media (max-width: 480px)
+{
+    #main h1{
+        color: green;
+        font-size: 32px;
+    }
+    #main .text , .img {
+        width: 100%;
+    }
+    #main .text{
+        height: auto;
+    }
+    .text p{
+        font-size: 14px;
+    }
+    #main .img {
+        height: auto;
+    }
+    #main .img img {
+        height: auto;
+    }
+}
+
+/* Custom media query It is for range */
+@media (min-width: 920px) and (max-width:1000px){
+    body{
+        background: pink;
+    }
+}
